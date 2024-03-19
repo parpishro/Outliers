@@ -113,6 +113,8 @@ $$
 
 # Evaluating Outlier Influence
 
+- Cook's distance is created using both residual and leverage effects
+
 <center>
     <img src="fig2.jpg" width="90%" height="120%" />
 </center>
