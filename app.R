@@ -5,7 +5,7 @@ library(gridExtra)
 
 # Define UI
 ui <- fluidPage(
-  titlePanel("Simple Linear Regression: LS Fit Demo with Diagnostics"),
+  titlePanel("Effect of Outliers on Simple Regression Analysis"),
   
   sidebarLayout(
     sidebarPanel(
@@ -26,7 +26,18 @@ ui <- fluidPage(
       actionButton("showCooks", "Cook's Distance Plot"),
       uiOutput("plotOutput")
     )
-  )
+  ),
+  # Custom CSS to position the signature at the bottom right
+  tags$style(HTML("
+    .signature {
+      position: fixed;
+      right: 10px;
+      bottom: 10px;
+      color: #666;
+    }
+  ")),
+  # Adding the signature element
+  div(class="signature", "Par Pishrobat")
 )
 
 # Define server logic
