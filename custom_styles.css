@@ -1,0 +1,59 @@
+body {
+  font-family: "Times New Roman", Times, serif !important;
+  color: #333333; /* Dark gray */
+  font-size: 16px; /* Adjust body text size */
+  background-color: #F0F0F0; /* Light gray background */
+  background-image: url('path/to/your/image.jpg');
+  background-size: cover;
+}
+
+/* Target the first slide specifically - you may need to adjust this selector */
+.slidy-slide:nth-of-type(1) {
+  background-image: url('fig-cover.JPG');
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+
+
+h1 {
+  font-size: 30px; /* Adjust title size */
+  color: #FFA500; /* Example: Blue for headings */
+}
+
+h2 {
+  font-size: 24px; /* Adjust subtitles */
+}
+
+
+
+
+ul, ol {
+  padding-left: 20px;
+}
+
+li {
+  margin-bottom: 10px; /* Space between bullet points */
+  color: #555555; /* Darker text for contrast */
+}
+
+
+a {
+  color: #007BFF; /* Blue */
+  text-decoration: none; /* Removing underline */
+}
+
+a:hover {
+  text-decoration: underline; /* Underline on hover for visibility */
+}
+
+header {
+  background-color: #FFA500; /* Blue background */
+  color: white; /* White text */
+  padding: 10px 0; /* Adjust spacing */
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  border-bottom: 2px solid #0056b3; /* Darker blue border */
+}
+
