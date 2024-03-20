@@ -1,7 +1,6 @@
 ---
 output: 
   slidy_presentation: 
-    incremental: true
     css: custom_styles.css
 ---
 
@@ -124,7 +123,7 @@ $$
 
 - **Influence Curves** Curved lines represent Cook's distance thresholds
 - **Standard Residuals** Vertical distance from zero indicates the size of their residuals
-- **Outlier Identification** Points above the curve are potential outliers with high influence
+- **Outlier Identification** Points outside of the curves are potential outliers with high influence
 - **Low-Leverage Outliers** Blue points show outliers with small leverage but significant residuals
 - **High-Leverage Outliers** Red points indicate outliers with both high leverage and large residuals
 
@@ -149,9 +148,11 @@ $$
 
 # Conclusion 
 
-- **Critical Role:** Outliers play a pivotal role in statistical analyses
-- **Opportunity:** Not merely errors to discard but potential sources of deeper understanding
-- **Insight:** Thoughtful outlier analysis fosters more reliable and robust models
+- **Opportunity:** Outliers can be potential sources of deeper understanding and insight
+- **Distraction:** Outliers can represent erroneous observation/measurement and mislead us
+- **How to identify:** Using leverage, residuals, Cook's ditance, and visualizations
+- **What to do with them:** Source and context must be investigated before discarding
+- **Take away:** Thoughtful outlier analysis fosters reliable and robust models
 
 # References 
 

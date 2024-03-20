@@ -443,14 +443,14 @@ Par Pishrobat
 </div>
 <div class="cover-date">
 <p>
-2024-03-19
+2024-03-20
 </p>
 </div>
 </div>
 </div>
 <div id="introduction-to-outliers" class="slide section level1">
 <h1>Introduction to Outliers</h1>
-<ul class="incremental">
+<ul>
 <li><strong>Outliers:</strong> Data points that stand out dramatically
 from others</li>
 <li><strong>Importance:</strong> Identifying outliers is crucial for
@@ -461,7 +461,7 @@ regression, a common statistical analysis method</li>
 </div>
 <div id="why-should-we-care-about-outliers" class="slide section level1">
 <h1>Why Should We Care About Outliers?</h1>
-<ul class="incremental">
+<ul>
 <li><strong>Influence on Analysis:</strong> A single outlier can
 significantly skew our findings</li>
 <li><strong>Insight or Distraction:</strong> Outliers might reveal
@@ -472,7 +472,7 @@ predictions by managing outliers thoughtfully</li>
 </div>
 <div id="spotting-the-unusual" class="slide section level1">
 <h1>Spotting the Unusual</h1>
-<ul class="incremental">
+<ul>
 <li><strong>Leverage:</strong> How much an outlier could
 <em>potentially</em> sway our analysis</li>
 <li><strong>Influence:</strong> Not all outliers affect the analysis
@@ -483,7 +483,7 @@ regression line</li>
 </div>
 <div id="regression-analysis-framework" class="slide section level1">
 <h1>Regression Analysis Framework</h1>
-<ul class="incremental">
+<ul>
 <li><strong>Regression Model:</strong> Defines the relationship between
 a predictor and response <span class="math display">\[
 Y = \beta_0 + \beta_1 X + \epsilon
@@ -500,7 +500,7 @@ regression slope</li>
 </div>
 <div id="effects-of-outliers-on-regression-slope" class="slide section level1">
 <h1>Effects of Outliers on Regression Slope</h1>
-<ul class="incremental">
+<ul>
 <li><strong>Central Trend:</strong> Regression line passes through data
 means</li>
 <li><strong>Low Influence:</strong> Point 6 slightly adjusts the line,
@@ -519,7 +519,7 @@ Figure 1:
 </div>
 <div id="leverage-the-power-to-influence" class="slide section level1">
 <h1>Leverage: The Power to Influence</h1>
-<ul class="incremental">
+<ul>
 <li><strong>Definition:</strong> Measure of an outlier’s potential
 impact</li>
 <li><strong>Proximity to Mean:</strong> Points further from the average
@@ -535,7 +535,7 @@ farther from the pivot has more impact</li>
 </div>
 <div id="residuals-and-cooks-distance" class="slide section level1">
 <h1>Residuals and Cook’s Distance</h1>
-<ul class="incremental">
+<ul>
 <li><strong>Residuals:</strong> The gaps between what we predict and
 what we observe</li>
 <li><strong>Cook’s Distance:</strong> Gauging the change in model
@@ -548,7 +548,7 @@ responsiveness to outlier</li>
 </div>
 <div id="evaluating-outlier-influence" class="slide section level1">
 <h1>Evaluating Outlier Influence</h1>
-<ul class="incremental">
+<ul>
 <li>Cook’s distance is created using both residual and leverage
 effects</li>
 </ul>
@@ -558,13 +558,13 @@ effects</li>
 </div>
 <div id="residuals-vs-leverage" class="slide section level1">
 <h1>Residuals vs Leverage</h1>
-<ul class="incremental">
+<ul>
 <li><strong>Influence Curves</strong> Curved lines represent Cook’s
 distance thresholds</li>
 <li><strong>Standard Residuals</strong> Vertical distance from zero
 indicates the size of their residuals</li>
-<li><strong>Outlier Identification</strong> Points above the curve are
-potential outliers with high influence</li>
+<li><strong>Outlier Identification</strong> Points outside of the curves
+are potential outliers with high influence</li>
 <li><strong>Low-Leverage Outliers</strong> Blue points show outliers
 with small leverage but significant residuals</li>
 <li><strong>High-Leverage Outliers</strong> Red points indicate outliers
@@ -576,7 +576,7 @@ with both high leverage and large residuals</li>
 </div>
 <div id="visualizing-the-effects" class="slide section level1">
 <h1>Visualizing the Effects</h1>
-<ul class="incremental">
+<ul>
 <li><strong>Visualization:</strong> How adding/removing outliers affects
 the regression line</li>
 <li>Access the visual demonstrations <a href="https://wymo76-par-pishrobat.shinyapps.io/outliers/">here</a>.</li>
@@ -587,7 +587,7 @@ the regression line</li>
 </div>
 <div id="what-to-do-with-outliers" class="slide section level1">
 <h1>What to Do with Outliers</h1>
-<ul class="incremental">
+<ul>
 <li><strong>Decision:</strong> Whether to keep or remove outliers</li>
 <li><strong>Caution:</strong> Removing outliers simplifies the model but
 may oversimplify reality</li>
@@ -597,18 +597,22 @@ context of outliers</li>
 </div>
 <div id="conclusion" class="slide section level1">
 <h1>Conclusion</h1>
-<ul class="incremental">
-<li><strong>Critical Role:</strong> Outliers play a pivotal role in
-statistical analyses</li>
-<li><strong>Opportunity:</strong> Not merely errors to discard but
-potential sources of deeper understanding</li>
-<li><strong>Insight:</strong> Thoughtful outlier analysis fosters more
+<ul>
+<li><strong>Opportunity:</strong> Outliers can be potential sources of
+deeper understanding and insight</li>
+<li><strong>Distraction:</strong> Outliers can represent erroneous
+observation/measurement and mislead us</li>
+<li><strong>How to identify:</strong> Using leverage, residuals, Cook’s
+ditance, and visualizations</li>
+<li><strong>What to do with them:</strong> Source and context must be
+investigated before discarding</li>
+<li><strong>Take away:</strong> Thoughtful outlier analysis fosters
 reliable and robust models</li>
 </ul>
 </div>
 <div id="references" class="slide section level1">
 <h1>References</h1>
-<ul class="incremental">
+<ul>
 <li>Naomi Altman &amp; Martin Krzywinski, “Analyzing outliers:
 influential or nuisance?”, <em>Nature Methods</em>, 2016.</li>
 <li>The <a href="https://wymo76-par-pishrobat.shinyapps.io/outliers/">app</a> is
